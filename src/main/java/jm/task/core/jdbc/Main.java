@@ -12,8 +12,13 @@ import org.hibernate.cfg.Configuration;
 public class Main {
     public static void main(String[] args) {
         UserDao userDao = new UserDaoHibernateImpl();
-        userDao.saveUser("Tim", "Kort", (byte) 16);
-        userDao.getAllUsers();
+//        userDao.createUsersTable();
+//        userDao.saveUser("Tim", "Kort", (byte) 16);
+//        userDao.saveUser("Tom", "Kort", (byte) 18);
+//        userDao.saveUser("Time", "Kort", (byte) 20);
+//        userDao.saveUser("T", "Kort", (byte) 22);
+//        userDao.getAllUsers();
+        userDao.cleanUsersTable();
 
 //        UserService userService = new UserServiceImpl();
 //

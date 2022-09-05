@@ -1,9 +1,0 @@
-# Date sourse
-hibernate.connection.url=jdbc:mysql://localhost:3306/sca_db
-hibernate.connection.username=root
-hibernate.connection.password=Malkavian1610
-
-#HibernateConfig
-hibernate.dialect=org.hibernate.dialect.MySQLDialect
-hibernate.show_sql=true
-hibernate.current_session_context_class=thread
