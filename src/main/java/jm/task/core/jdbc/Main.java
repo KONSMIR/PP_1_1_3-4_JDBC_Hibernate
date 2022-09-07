@@ -12,26 +12,17 @@ import org.hibernate.cfg.Configuration;
 public class Main {
     public static void main(String[] args) {
         UserDao userDao = new UserDaoHibernateImpl();
-//        userDao.createUsersTable();
-//        userDao.saveUser("Tim", "Kort", (byte) 16);
-//        userDao.saveUser("Tom", "Kort", (byte) 18);
-//        userDao.saveUser("Time", "Kort", (byte) 20);
-//        userDao.saveUser("T", "Kort", (byte) 22);
-//        userDao.getAllUsers();
-        userDao.cleanUsersTable();
 
-//        UserService userService = new UserServiceImpl();
-//
-//        userService.createUsersTable();
-//
-//        userService.saveUser("Oleg", "Petrov", (byte) 22);
-//        userService.saveUser("Oliver", "Cars", (byte) 29);
-//        userService.saveUser("Sam", "Goch", (byte) 23);
-//        userService.saveUser("Mary", "Fox", (byte) 21);
-//
-//        userService.getAllUsers().forEach(System.out::println);
-//
-//        userService.cleanUsersTable();
-//        userService.dropUsersTable();
+        userDao.createUsersTable();
+
+        userDao.saveUser("Oleg", "Petrov", (byte) 22);
+        userDao.saveUser("Oliver", "Cars", (byte) 29);
+        userDao.saveUser("Sam", "Goch", (byte) 23);
+        userDao.saveUser("Mary", "Fox", (byte) 21);
+
+        userDao.getAllUsers().forEach(System.out::println);
+
+        userDao.cleanUsersTable();
+        userDao.dropUsersTable();
     }
 }
